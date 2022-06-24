@@ -1,0 +1,8 @@
+export { default as Header } from './header/Header'
+export { default as Home } from './pages/home/Home'
+export { default as Library } from './pages/library/Library'
+export { default as Collab } from './pages/collab/Collab'
+export { default as News } from './pages/news/News'
+export { default as About } from './pages/about/About'
+export { default as Updates } from './pages/updates/Updates'
+export { default as Dashboard } from './dashboard/Dashboard'
