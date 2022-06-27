@@ -15,7 +15,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <AnimatePresence exitBeforeEnter>
-      <div className="w-screen h-auto flex flex-col">
+      <div className="w-screen h-auto flex flex-col bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-300">
         <Header />
         <main className="mt-24 p-8 w-full">
           <Routes>
