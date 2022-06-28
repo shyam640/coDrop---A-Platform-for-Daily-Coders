@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.8efb2911.css",
-    "main.js": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.a02b62e1.js",
+    "main.css": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.ec3879d8.css",
+    "main.js": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.06eec63d.js",
     "static/js/787.424581ce.chunk.js": "/coDrop---A-Platform-for-Daily-Coders/static/js/787.424581ce.chunk.js",
     "static/media/cross_circle.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/cross_circle.3abe0fd9c673298504e9.png",
     "static/media/commin_soon.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/commin_soon.539cf09081a826480035.png",
@@ -11,12 +11,12 @@
     "static/media/login_avatar.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/login_avatar.e5117e8e0cea57c9a92f.png",
     "static/media/codeforces.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/codeforces.d22b5260605abf0255a7.png",
     "index.html": "/coDrop---A-Platform-for-Daily-Coders/index.html",
-    "main.8efb2911.css.map": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.8efb2911.css.map",
-    "main.a02b62e1.js.map": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.a02b62e1.js.map",
+    "main.ec3879d8.css.map": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.ec3879d8.css.map",
+    "main.06eec63d.js.map": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.06eec63d.js.map",
     "787.424581ce.chunk.js.map": "/coDrop---A-Platform-for-Daily-Coders/static/js/787.424581ce.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8efb2911.css",
-    "static/js/main.a02b62e1.js"
+    "static/css/main.ec3879d8.css",
+    "static/js/main.06eec63d.js"
   ]
 }
