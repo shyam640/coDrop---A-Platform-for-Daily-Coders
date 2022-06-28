@@ -1,7 +1,7 @@
 {
   "name": "code_drop",
   "version": "0.1.0",
-  "homepage": "https://shyam640.github.io/react-project-deployment",
+  "homepage": "https://shyam640.github.io/coDrop---A-Platform-for-Daily-Coders",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.9.3",
