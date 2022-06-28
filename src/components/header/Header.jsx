@@ -10,7 +10,6 @@ import { FcCollaboration } from "react-icons/fc";
 import { GiNewspaper } from "react-icons/gi";
 import { RiTeamFill, RiDashboardFill } from "react-icons/ri";
 import { GrUpdate } from "react-icons/gr";
-import "./Header.css";
 import Avatar from "../../assets/images/login_avatar.png";
 // import useLocalStorage from 'use-local-storage';
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
@@ -65,61 +64,65 @@ const Header = () => {
   };
 
   return (
-    <header className="w-screen fixed z-50 lg:pt-2 lg:px-5 p-2 bg-gradient-to-r from-yellow-300 to-red-400 shadow-lg shadow-textColor">
+    <header className="fixed z-50 w-screen px-2 lg:px-4 bg-gradient-to-br from-cyan-300 to-blue-500 shadow-[0_15px_20px_0px_rgba(0,0,0,0.6)]">
       {/* Desktop view */}
-      <div className="hidden lg:flex w-auto items-center">
+      <div className="hidden lg:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex justify-center items-center gap-2">
-          <img src={logo} className="w-12 object-cover hover:motion-safe:animate-spin" alt="logo" />
+          <img
+            src={logo}
+            className="w-12 object-cover hover:motion-safe:animate-spin"
+            alt="logo"
+          />
           <p className="text-gradientHover font-extrabold text-xl sm:text-4xl">
             coDrop
           </p>
         </Link>
 
-        <div className="flex items-center xl:gap-5 lg:gap-2 xs:gap-0 ml-auto pr-5">
+        <div className="flex items-center sm:gap-0 lg:gap-2 xl:gap-5">
           <motion.ul
             initial={{ opacity: 0, y: 300 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 300 }}
-            className="flex items-center gap-1.5 xl:gap-8 lg:gap-3"
+            className="flex items-center gap-1.5 lg:gap-3"
           >
             <Link
               to={"/"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-200 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-200 transition-all ease-in-out cursor-pointer"
             >
               <BiHomeAlt />
               Home
             </Link>
             <Link
               to={"/library"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-300 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-300 transition-all ease-in-out cursor-pointer"
             >
               <MdLocalLibrary />
               Library
             </Link>
             <Link
               to={"/collab"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-400 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-400 transition-all ease-in-out cursor-pointer"
             >
               <FcCollaboration />
               Collab
             </Link>
             <Link
               to={"/ai-news"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-500 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-500 transition-all ease-in-out cursor-pointer"
             >
               <GiNewspaper />
               AI News
             </Link>
             <Link
               to={"/about-us"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-600 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-600 transition-all ease-in-out cursor-pointer"
             >
               <RiTeamFill />
               Team
             </Link>
             <Link
               to={"/updates"}
-              className="nav-items w-auto text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-cyan-500 to-blue-500 duration-700 transition-all ease-in-out cursor-pointer"
+              className="nav-items text-base p-2 rounded-lg hover:font-bold text-textColor hover:text-black hover:bg-gradient-to-r from-yellow-300 to-red-400 duration-700 transition-all ease-in-out cursor-pointer"
             >
               <GrUpdate />
               Updates
@@ -224,7 +227,7 @@ const Header = () => {
       </div>
 
       {/*Tablet & Mobile Devices */}
-      <div className="flex justify-center lg:hidden w-auto items-center p-1 gap-3">
+      <div className="flex justify-between lg:hidden w-full items-center">
         {/* Upper Header */}
         {user && (
           <motion.div
@@ -235,8 +238,10 @@ const Header = () => {
             className="relative flex items-center"
           >
             <BiTask className="text-textColor hover:text-black hover:font-bold text-2xl cursor-pointer" />
-            <div className="absolute -top-2 -right-1 w-4 h-4 rounded-full bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center">
-              <p className="text-xs my-1 mx-1.5 text-textColor hover:text-black hover:font-bold font-semibold">1</p>
+            <div className="absolute -top-2 -right-1 w-4 h-4 rounded-full bg-gradient-to-tr from-yellow-300 to-red-500 flex items-center">
+              <p className="text-xs my-1 mx-1.5 text-textColor hover:text-black hover:font-bold font-semibold">
+                1
+              </p>
             </div>
           </motion.div>
         )}
@@ -245,21 +250,22 @@ const Header = () => {
           <Link
             to={"/updates"}
             onClick={() => setActiveNav("/updates")}
-            className="text-lg p-2 flex items-center text-textColor justify-start hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black hover:font-bold rounded-lg"
+            className="text-lg flex items-center p-2 text-textColor hover:bg-gradient-to-r from-cyan-500 to-blue-500 hover:text-black hover:font-bold rounded-lg"
           >
             <GrUpdate />
           </Link>
         )}
 
-        <Link
-          to={"/"}
-          className="flex justify-center items-center ml-auto gap-2"
-        >
-          <img src={logo} className="w-8 object-cover hover:motion-safe:animate-spin" alt="logo" />
+        <Link to={"/"} className="flex justify-center items-center gap-2">
+          <img
+            src={logo}
+            className="w-8 object-cover hover:motion-safe:animate-spin"
+            alt="logo"
+          />
           <p className="text-headingColor text-2xl font-extrabold">coDrop</p>
         </Link>
 
-        <div className="flex md:gap-6 gap-4 ml-auto items-center">
+        <div className="flex items-center gap-2">
           <motion.div
             initial={{ opacity: 0, y: 300 }}
             animate={{ opacity: 1, y: 0 }}
@@ -280,7 +286,7 @@ const Header = () => {
               initial={{ opacity: 0, scale: 0.6 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.6 }}
-              className="w-[10rem] pt-2 pb-2 bg-gradient-to-r from-cyan-500 to-blue-500 border-sky-200 border-1 text-white rounded-lg flex flex-col absolute top-12 right-24"
+              className="w-[10rem] pt-2 pb-2 bg-gradient-to-r from-cyan-500 to-blue-500 border-sky-200 border-1 text-white rounded-lg flex flex-col absolute top-10 right-20"
             >
               {user && (
                 <div>
@@ -358,85 +364,7 @@ const Header = () => {
           </motion.label>
         </div>
 
-        {/* Bottom Header */}
-        <nav className="flex justify-center items-center w-full sm:w-max z-50 p-2 bg-gradient-to-br from-cyan-300 to-blue-500 hover:text-black hover:font-bold fixed bottom-0 px-4 shadow-xl rounded-t-xl sm:gap-6 gap-4">
-          <Link
-            to={"/"}
-            onClick={() => setActiveNav("/")}
-            className={
-              activeNav === "/"
-                ? "active text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                : "text-2xl flex text-textColor hover:text-black hover:font-bold items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-            }
-          >
-            <BiHomeAlt />
-            {/* Home */}
-          </Link>
-          <Link
-            to={"/library"}
-            onClick={() => setActiveNav("/library")}
-            className={
-              activeNav === "/library"
-                ? "active text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                : "text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-            }
-          >
-            <MdLocalLibrary />
-            {/* Library */}
-          </Link>
-          <Link
-            to={"/collab"}
-            onClick={() => setActiveNav("/collab")}
-            className={
-              activeNav === "/collab"
-                ? "active text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                : "text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-            }
-          >
-            <FcCollaboration />
-            {/* Collab */}
-          </Link>
-          <Link
-            to={"/ai-news"}
-            onClick={() => setActiveNav("/ai-news")}
-            className={
-              activeNav === "/ai-news"
-                ? "active text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                : "text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-            }
-          >
-            <GiNewspaper />
-            {/* News */}
-          </Link>
-
-          {user && (
-            <Link
-              to={"/user/dashboard"}
-              onClick={() => setActiveNav("/ai-news")}
-              className={
-                activeNav === "/ai-news"
-                  ? "active text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                  : "text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-              }
-            >
-              <RiDashboardFill />
-              {/* Dashboard */}
-            </Link>
-          )}
-          {!user && (
-            <Link
-              to={"/about-us"}
-              onClick={() => setActiveNav("/about-us")}
-              className={
-                activeNav === "/about-us"
-                  ? "activetext-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-                  : "text-2xl text-textColor hover:text-black hover:font-bold flex items-center justify-center hover:bg-gradient-to-tl from-red-500 via-orange-500 to-pink-400 p-2 rounded-lg flex-col"
-              }
-            >
-              <RiTeamFill />
-            </Link>
-          )}
-        </nav>
+        
       </div>
     </header>
   );

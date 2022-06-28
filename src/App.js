@@ -9,15 +9,17 @@ import {
   About,
   Updates,
   Dashboard,
+  BottomNav
 } from "./components";
 import { AnimatePresence } from "framer-motion";
 
 function App() {
   return (
     <AnimatePresence exitBeforeEnter>
-      <div className="w-screen h-auto flex flex-col overflow-x-hidden">
+      <div className="w-screen h-auto flex flex-col overflow-hidden">
         <Header />
-        <main className="mt-12 sm:mt-14 p-2 md:p-8 bg-slate-100 w-full">
+        <BottomNav className="flex justify-center items-center"/>
+        <main className="mt-16 lg:mt-24 mb-10 p-2 sm:p-4">
           <Routes>
             <Route path="/*" element={<Home />} />
             <Route path="/library" element={<Library />} />

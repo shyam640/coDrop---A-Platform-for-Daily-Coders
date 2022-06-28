@@ -19,8 +19,8 @@ const platforms = [
 
 const Home = () => {
   return (
-    <div>
-      <p className="text-[2.5rem] mt-4 font-bold tracking-normal shadow-2xl md:shadow-none md:bg-none bg-gradient-to-r from-fuchsia-500 via-purple-500 to-purple-400 p-4 rounded-lg leading-9 text-gray-800">
+    <div className="items-center justify-center">
+      <p className="text-[2.5rem] font-bold tracking-normal shadow-2xl md:shadow-none md:bg-none bg-gradient-to-r from-fuchsia-500 via-purple-500 to-purple-400 p-2 sm:p-4 rounded-lg leading-9 text-gray-800">
         Welcome{" "}
         {user && (
           <span className="text-green-400 font-medium text-[2rem]">
@@ -32,7 +32,7 @@ const Home = () => {
         <span className="text-[2rem] text-red-700"> How is your day?</span>
       </p>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-        <div className="py-2 flex-1 flex flex-col items-start leading-9">
+        <div className="flex-1 flex flex-col items-start leading-9">
           <p className="text-base text-textColor">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
             odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla
@@ -56,7 +56,7 @@ const Home = () => {
             <AiOutlineArrowDown className="animate-bounce" />
           </motion.button>
         </div>
-        <div className="hidden h-[60vh] sm:flex p-7 mt-8 w-full flex-1 relative flex-col-reverse  bg-gradient-to-b from-blue-50 to-blue-300 rounded-3xl">
+        <div className="hidden h-[30vh] lg:flex flex-1 relative flex-col-reverse  bg-gradient-to-b from-blue-50 to-blue-300 rounded-3xl">
           <img
             src={bottomCircleImage}
             className="w-full h-20"
