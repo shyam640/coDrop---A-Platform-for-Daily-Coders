@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-project-deployment/static/css/main.8efb2911.css",
-    "main.js": "/react-project-deployment/static/js/main.5ffe2651.js",
-    "static/js/787.424581ce.chunk.js": "/react-project-deployment/static/js/787.424581ce.chunk.js",
-    "static/media/cross_circle.png": "/react-project-deployment/static/media/cross_circle.3abe0fd9c673298504e9.png",
-    "static/media/commin_soon.png": "/react-project-deployment/static/media/commin_soon.539cf09081a826480035.png",
-    "static/media/bottom_circle_shadow.png": "/react-project-deployment/static/media/bottom_circle_shadow.215469d205e6f99ae32b.png",
-    "static/media/codechef.png": "/react-project-deployment/static/media/codechef.bcdfd2357a88ee0e469e.png",
-    "static/media/leetcode.png": "/react-project-deployment/static/media/leetcode.c78fc082f2b4c496259f.png",
-    "static/media/login_avatar.png": "/react-project-deployment/static/media/login_avatar.e5117e8e0cea57c9a92f.png",
-    "static/media/codeforces.png": "/react-project-deployment/static/media/codeforces.d22b5260605abf0255a7.png",
-    "index.html": "/react-project-deployment/index.html",
-    "main.8efb2911.css.map": "/react-project-deployment/static/css/main.8efb2911.css.map",
-    "main.5ffe2651.js.map": "/react-project-deployment/static/js/main.5ffe2651.js.map",
-    "787.424581ce.chunk.js.map": "/react-project-deployment/static/js/787.424581ce.chunk.js.map"
+    "main.css": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.8efb2911.css",
+    "main.js": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.a02b62e1.js",
+    "static/js/787.424581ce.chunk.js": "/coDrop---A-Platform-for-Daily-Coders/static/js/787.424581ce.chunk.js",
+    "static/media/cross_circle.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/cross_circle.3abe0fd9c673298504e9.png",
+    "static/media/commin_soon.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/commin_soon.539cf09081a826480035.png",
+    "static/media/bottom_circle_shadow.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/bottom_circle_shadow.215469d205e6f99ae32b.png",
+    "static/media/codechef.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/codechef.bcdfd2357a88ee0e469e.png",
+    "static/media/leetcode.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/leetcode.c78fc082f2b4c496259f.png",
+    "static/media/login_avatar.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/login_avatar.e5117e8e0cea57c9a92f.png",
+    "static/media/codeforces.png": "/coDrop---A-Platform-for-Daily-Coders/static/media/codeforces.d22b5260605abf0255a7.png",
+    "index.html": "/coDrop---A-Platform-for-Daily-Coders/index.html",
+    "main.8efb2911.css.map": "/coDrop---A-Platform-for-Daily-Coders/static/css/main.8efb2911.css.map",
+    "main.a02b62e1.js.map": "/coDrop---A-Platform-for-Daily-Coders/static/js/main.a02b62e1.js.map",
+    "787.424581ce.chunk.js.map": "/coDrop---A-Platform-for-Daily-Coders/static/js/787.424581ce.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8efb2911.css",
-    "static/js/main.5ffe2651.js"
+    "static/js/main.a02b62e1.js"
   ]
 }
