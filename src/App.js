@@ -18,7 +18,9 @@ function App() {
     <AnimatePresence exitBeforeEnter>
       <div className="w-screen h-auto flex flex-col overflow-hidden">
         <Header />
-        <BottomNav className="flex justify-center items-center"/>
+        <div className="flex justify-center items-center">
+          <BottomNav/>
+        </div>
         <main className="mt-16 lg:mt-24 mb-10 p-2 sm:p-4">
           <Routes>
             <Route path="/*" element={<Home />} />

@@ -13,7 +13,7 @@ const user = JSON.parse(localStorage.getItem("user"));
 const BottomNav = () => {
   const [activeNav, setActiveNav] = useState("/");
   return (
-    <nav className="flex justify-center shadow-[0_35px_60px_25px_rgb(0,0,0)] lg:hidden gap-4 sm:gap-8 items-center w-full sm:w-max sm:px-4 z-50 bg-gradient-to-br from-cyan-300 to-blue-500 hover:text-black hover:font-bold fixed bottom-0 rounded-t-xl">
+    <nav className="flex py-1 justify-evenly shadow-[0_35px_60px_25px_rgb(0,0,0)] lg:hidden gap-4 sm:gap-8 items-center w-full sm:w-max sm:px-4 z-50 bg-gradient-to-br from-cyan-300 to-blue-500 hover:text-black hover:font-bold fixed bottom-0 rounded-t-xl">
       <Link
         to={"/"}
         onClick={() => setActiveNav("/")}
