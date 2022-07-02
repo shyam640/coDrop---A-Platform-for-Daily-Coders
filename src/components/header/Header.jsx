@@ -65,7 +65,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed z-50 w-screen px-2 lg:px-4 bg-gradient-to-br from-cyan-300 to-blue-500 shadow-[0_15px_20px_0px_rgba(0,0,0,0.6)]">
+    <header className="fixed z-50 w-screen px-4 bg-gradient-to-br from-cyan-300 to-blue-500 shadow-[0_15px_20px_0px_rgba(0,0,0,0.6)]">
       {/* Desktop view */}
       <div className="hidden lg:flex w-full h-full items-center justify-between">
         <Link to={"/"} className="flex justify-center items-center gap-2">
