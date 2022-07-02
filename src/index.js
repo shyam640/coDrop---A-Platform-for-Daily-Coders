@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import { BrowserRouter } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import { StateProvider } from "./context/StateProvider";
 import { initialState } from "./context/initialState";
 import reducer from "./context/reducer";
@@ -19,4 +20,5 @@ root.render(
   </BrowserRouter>
 );
 
+serviceWorkerRegistration.register();
 reportWebVitals();
