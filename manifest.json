@@ -2,7 +2,7 @@
   "theme_color": "#4a90e2",
   "background_color": "#4a90e2",
   "display": "standalone",
-  "scope": "/",
+  "scope": "/coDrop---A-Platform-for-Daily-Coders/",
   "start_url": "/coDrop---A-Platform-for-Daily-Coders/",
   "name": "coDrop - Drop point for daily coder",
   "short_name": "coDrop",
