@@ -3,7 +3,7 @@
   "background_color": "#4a90e2",
   "display": "standalone",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "/coDrop---A-Platform-for-Daily-Coders/",
   "name": "coDrop - Drop point for daily coder",
   "short_name": "coDrop",
   "description": "A React based Progressive Web App build for daily coders to manage their ranks and statistics.",
